@@ -14,7 +14,6 @@ import java.util.List;
 public class OdontologoDaoH2 implements IDao<Odontologo> {
     private static final Logger LOGGER = Logger.getLogger(OdontologoDaoH2.class);
 
-
     public Odontologo guardar(Odontologo odontologo) {
         Connection connection = null;
         try{

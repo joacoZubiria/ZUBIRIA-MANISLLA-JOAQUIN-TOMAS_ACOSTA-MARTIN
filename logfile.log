@@ -88,3 +88,7 @@ SELECT * FROM PACIENTES [42104-214]
 [2023-05-25 18:29:38] [ INFO ] [DomicilioDaoH2:147] Se ha encontrado el domicilio: Id: 2 - Calle: Calle Wallaby - Numero: 42 - Localidad: Sydney - Provincia: Nueva Gales del Sur
 [2023-05-25 18:29:38] [ INFO ] [DomicilioDaoH2:147] Se ha encontrado el domicilio: Id: 4 - Calle: Calle - Numero: 13 - Localidad: Localidad - Provincia: Provincia
 [2023-05-25 18:29:38] [ INFO ] [PacienteDaoH2:84] Listado de todos los pacientes: [Id: 1 - Nombre: Emiliano - Apellido: Cellilli - DNI: 35464856 - Fechas de ingreso: 2023-05-24 - Domicilio: Id: 1 - Calle: Av Siempre Viva - Numero: 742 - Localidad: Springfield - Provincia: Massachusetts, Id: 2 - Nombre: Pablo - Apellido: Clemente - DNI: 3548546 - Fechas de ingreso: 2023-05-24 - Domicilio: Id: 2 - Calle: Calle Wallaby - Numero: 42 - Localidad: Sydney - Provincia: Nueva Gales del Sur, Id: 4 - Nombre: Nombre - Apellido: Apellido - DNI: 123456 - Fechas de ingreso: 2023-05-02 - Domicilio: Id: 4 - Calle: Calle - Numero: 13 - Localidad: Localidad - Provincia: Provincia]
+[2023-05-25 20:42:54] [ INFO ] [OdontologoDaoH2:16] Se agregó el odontologo com.backend.entity.Odontologo@cd3fee8
+[2023-05-25 20:42:54] [ INFO ] [OdontologoDaoH2:16] Se agregó el odontologo com.backend.entity.Odontologo@5a63f509
+[2023-05-25 20:42:54] [ INFO ] [OdontologoDaoH2:23] 123123-CARLOS-ASDAD
+[2023-05-25 20:42:54] [ INFO ] [OdontologoDaoH2:23] 432423-MATIAS-DSADAD
