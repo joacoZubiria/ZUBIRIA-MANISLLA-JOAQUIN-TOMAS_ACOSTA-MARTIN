@@ -34,4 +34,7 @@ public class Odontologo {
         this.nombre = nombre;
         this.apellido = apellido;
     }
+    public String toString() {
+        return " - Nombre: " + nombre + " - Apellido: " + apellido + " - Matricula: " + matricula;
+    }
 }

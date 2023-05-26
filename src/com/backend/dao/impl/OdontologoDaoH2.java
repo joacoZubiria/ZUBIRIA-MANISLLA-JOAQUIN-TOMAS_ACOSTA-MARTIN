@@ -21,10 +21,10 @@ public class OdontologoDaoH2 implements IDao<Odontologo> {
             connection.setAutoCommit(false);
 
 
-            PreparedStatement ps = connection.prepareStatement("INSERT INTO ODONTOLOGOS (NOMBRE, APELLIDO, MATRICULA) VALUES (?, ?, ?)");
-            ps.setString(1, odontologo.getNombre());
-            ps.setString(2, odontologo.getApellido());
-            ps.setString(3, odontologo.getMatricula());
+            PreparedStatement ps = connection.prepareStatement("INSERT INTO ODONTOLOGOS (MATRICULA, NOMBRE, APELLIDO) VALUES (?, ?, ?)");
+            ps.setString(2, odontologo.getNombre());
+            ps.setString(3, odontologo.getApellido());
+            ps.setString(1, odontologo.getMatricula());
             ps.execute();
 
             connection.commit();
@@ -88,10 +88,11 @@ public class OdontologoDaoH2 implements IDao<Odontologo> {
 
 
     private Odontologo crearObjetoOdontologo(ResultSet resultSet) throws SQLException {
+        String matriculaOdontologo = resultSet.getString("matricula");
         String nombreOdontologo = resultSet.getString("nombre");
         String apellidoOdontologo = resultSet.getString("apellido");
-        String matriculaOdontologo = resultSet.getString("matricula");
-        return new Odontologo(nombreOdontologo, apellidoOdontologo, matriculaOdontologo);
+
+        return new Odontologo(matriculaOdontologo,nombreOdontologo, apellidoOdontologo);
     }
 
 

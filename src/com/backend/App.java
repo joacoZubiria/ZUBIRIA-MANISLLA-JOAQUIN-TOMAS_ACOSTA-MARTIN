@@ -8,7 +8,7 @@ public class App {
         Connection connection = null;
         try {
             Class.forName("org.h2.Driver");
-            connection = DriverManager.getConnection("jdbc:h2:~/parcial1;INIT=RUNSCRIPT FROM 'create.sql'", "sa", "sa");
+            connection = DriverManager.getConnection("jdbc:h2:~/parcialbackend;INIT=RUNSCRIPT FROM 'create.sql'", "sa", "sa");
 
         } catch (Exception e){
             e.printStackTrace();
